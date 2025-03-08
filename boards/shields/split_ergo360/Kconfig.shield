@@ -1,0 +1,5 @@
+config SHIELD_SPLIT_ERGO360_LEFT
+    def_bool $(shields_list_contains,split_ergo360_left)
+
+config SHIELD_SPLIT_ERGO360_RIGHT
+    def_bool $(shields_list_contains,split_ergo360_right)

@@ -1,0 +1,47 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define DEFAULT 0
+#define FN  1
+
+/ {
+    // Define a default keymap here.
+    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+&kp EQUAL       &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                             &trans     &kp N6  &kp N7    &kp N8     &kp N9      &kp N0     &kp MINUS
+&kp TAB         &kp Q      &kp W     &kp E     &kp R      &kp T   &trans                                                             &trans     &kp Y   &kp U     &kp I      &kp O       &kp P      &kp BACKSLASH
+&kp ESCAPE      &kp A      &kp S     &kp D     &kp F      &kp G   &trans                                                             &trans     &kp H   &kp J     &kp K      &kp L       &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z      &kp X     &kp C     &kp V      &kp B                  &kp LCTRL  &kp LEFT_ALT    &kp LEFT_WIN  &kp RCTRL             &kp N   &kp M     &kp COMMA  &kp PERIOD  &kp SLASH  &kp RIGHT_SHIFT
+&mo 1           &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &kp DEL    &kp HOME        &kp PG_UP     &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT    &kp RBKT   &mo 1
+                                                                                            &kp END         &kp PG_DN
+            >;
+        };
+
+        fn_layer {
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |BT_CLR|  F1  |  F2  |  F3  |  F4  |  F5  |                                                   |      | NLCK |  =   |  /   |  *   |      |
+            // |      |  F6  |  F7  |  F8  |  F9  |  F10 |                                                   |      |  7   |  8   |  9   |  -   |      |
+            // |      |      |      |      |      |      |                                                   |      |  4   |  5   |  6   |  +   |      |
+            // |      |      |      |      |      | PTSC |      |      |      |         |      |      |      |      |  1   |  2   |  3   | ENT  |      |
+            //        |      | INS  |      |      |      |      |  FN  |      |         |      |      |      |      |      |      |  .   | ENT  |
+            //                                                         |      |         |      |
+
+            bindings = <
+&trans  &kp F1   &kp F2   &kp F3   &kp F4           &kp F5   &trans                                     &trans  &trans  &kp KP_NUM  &kp EQUAL  &kp SLASH  &kp STAR   &trans
+&trans  &kp F6   &kp F7   &kp F8   &kp F9           &kp F10  &trans                                     &trans  &trans  &kp N7      &kp N8     &kp N9     &kp MINUS  &trans
+&trans  &kp F11  &kp F12  &kp INS  &kp PRINTSCREEN  &trans   &trans                                     &trans  &trans  &kp N4      &kp N5     &kp N6     &kp PLUS   &trans
+&trans  &trans   &trans   &trans   &trans           &trans            &trans  &trans    &trans  &trans          &trans  &kp N1      &kp N2     &kp N3     &kp ENTER  &trans
+&trans  &trans   &trans   &trans   &trans                    &kp DEL  &trans  &trans    &trans  &trans  &trans          &trans      &trans     &kp DOT    &kp ENTER  &trans
+                                                                              &trans    &trans
+            >;
+        };
+
+    };
+};
