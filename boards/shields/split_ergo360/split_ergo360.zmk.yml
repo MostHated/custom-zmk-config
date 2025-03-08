@@ -16,6 +16,7 @@ requires: [pro_micro]
 features:
   - keys
   - studio  # Remove this line if your keyboard will not support ZMK Studio
+  
 siblings:
   - split_ergo360_left
   - split_ergo360_right

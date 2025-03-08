@@ -19,11 +19,11 @@
 #
 ---
 include:
-  # - board: nice_nano_v2
-  #   shield: split_ergo360_left
-  # - board: nice_nano_v2
-  #   shield: split_ergo360_right
-  - board: nrf52840dk_nrf52840
+  - board: nice_nano_v2
     shield: split_ergo360_left
-  - board: nrf52840dk_nrf52840
+  - board: nice_nano_v2
     shield: split_ergo360_right
+  # - board: nrf52840dk_nrf52840
+  #   shield: split_ergo360_left
+  # - board: nrf52840dk_nrf52840
+  #   shield: split_ergo360_right
