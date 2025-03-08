@@ -15,12 +15,12 @@
 
         default_layer {
             bindings = <
-&kp EQUAL       &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                             &trans     &kp N6  &kp N7    &kp N8     &kp N9      &kp N0     &kp MINUS
-&kp TAB         &kp Q      &kp W     &kp E     &kp R      &kp T   &trans                                                             &trans     &kp Y   &kp U     &kp I      &kp O       &kp P      &kp BACKSLASH
-&kp ESCAPE      &kp A      &kp S     &kp D     &kp F      &kp G   &trans                                                             &trans     &kp H   &kp J     &kp K      &kp L       &kp SEMI   &kp SQT
-&kp LEFT_SHIFT  &kp Z      &kp X     &kp C     &kp V      &kp B                  &kp LCTRL  &kp LEFT_ALT    &kp LEFT_WIN  &kp RCTRL             &kp N   &kp M     &kp COMMA  &kp PERIOD  &kp SLASH  &kp RIGHT_SHIFT
-&mo 1           &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &kp DEL    &kp HOME        &kp PG_UP     &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT    &kp RBKT   &mo 1
-                                                                                            &kp END         &kp PG_DN
+&kp EQUAL       &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                    &trans     &kp N6  &kp N7    &kp N8     &kp N9      &kp N0     &kp MINUS
+&kp TAB         &kp Q      &kp W     &kp E     &kp R      &kp T   &trans                                                    &trans     &kp Y   &kp U     &kp I      &kp O       &kp P      &kp BACKSLASH
+&kp ESCAPE      &kp A      &kp S     &kp D     &kp F      &kp G   &trans                                                    &trans     &kp H   &kp J     &kp K      &kp L       &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z      &kp X     &kp C     &kp V      &kp B             &kp LCTRL  &kp LALT    &kp LEFT_WIN  &kp RCTRL             &kp N   &kp M     &kp COMMA  &kp PERIOD  &kp SLASH  &kp RIGHT_SHIFT
+&mo 1           &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp HOME    &kp PG_UP     &kp ENTER  &kp SPACE          &kp DOWN  &kp UP     &kp LBKT    &kp RBKT   &mo 1
+                                                                                       &kp END     &kp PG_DN
             >;
         };
 
