@@ -18,3 +18,8 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: nrf52840dk_nrf52840
+    shield: split_ergo360_left
+  - board: nrf52840dk_nrf52840
+    shield: split_ergo360_right
