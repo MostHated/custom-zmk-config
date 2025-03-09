@@ -45,15 +45,15 @@
 &pinctrl {
     i2c0_default: i2c0_default {
         group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 1, 6)>,  /* Pin 9 (P16) for SDA */
-                  <NRF_PSEL(TWIM_SCL, 0, 8)>; /* Pin 0 (P0.8) for SCL */
+            psels = <NRF_PSEL(TWIM_SDA, 1, 6)>,  /* Pin 9 (P1.6) for SDA */
+                  <NRF_PSEL(TWIM_SCL, 0, 9)>; /* Pin 10 (P0.9) for SCL */
         };
     };
 
     i2c0_sleep: i2c0_sleep {
         group1 {
             psels = <NRF_PSEL(TWIM_SDA, 1, 6)>,
-                  <NRF_PSEL(TWIM_SCL, 0, 8)>;
+                  <NRF_PSEL(TWIM_SCL, 0, 9)>;
             low-power-enable;
         };
     };
