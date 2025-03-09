@@ -13,10 +13,12 @@ url: https://example.com
 # Add any features your keyboard supports here.
 # See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files#features
 requires: [pro_micro]
+exposes: [i2c_oled]
 features:
   - keys
   - studio  # Remove this line if your keyboard will not support ZMK Studio
-  
+  - display
+
 siblings:
   - split_ergo360_left
   - split_ergo360_right
